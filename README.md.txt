@@ -15,3 +15,4 @@ Sistema de gestão de academia, incluindo alunos, instrutores, planos, pagamento
 
 1. Executar os scripts SQL na ordem: 01 → 02 → 03 → 04 → 05
 2. Garantir que o banco de dados esteja vazio antes de executar os scripts
+
