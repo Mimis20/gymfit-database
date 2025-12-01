@@ -1,0 +1,16 @@
+-- Inserindo dados de exemplo
+
+INSERT INTO Alunos VALUES (1, 'Lucas Silva', 'lucas@gmail.com', '11999999999', '1995-04-12');
+INSERT INTO Alunos VALUES (2, 'Ana Souza', 'ana@gmail.com', '11988888888', '1998-07-21');
+
+INSERT INTO Instrutores VALUES (1, 'Carlos Mendes', 'Musculação');
+INSERT INTO Instrutores VALUES (2, 'Fernanda Lima', 'Yoga');
+
+INSERT INTO Planos VALUES (1, 'Mensal', 150.00, 1);
+INSERT INTO Planos VALUES (2, 'Trimestral', 400.00, 3);
+
+INSERT INTO Aulas VALUES (1, 1, '2025-12-05 08:00:00');
+INSERT INTO Aulas VALUES (2, 2, '2025-12-06 10:00:00');
+
+INSERT INTO Pagamentos VALUES (1, 1, 1, '2025-12-01', 150.00);
+INSERT INTO Pagamentos VALUES (2, 2, 2, '2025-12-01', 400.00);

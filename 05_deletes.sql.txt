@@ -1,0 +1,9 @@
+-- Deletando dados
+
+-- Remover pagamento do aluno 2
+DELETE FROM Pagamentos
+WHERE id_pagamento = 2;
+
+-- Remover aula 2
+DELETE FROM Aulas
+WHERE id_aula = 2;

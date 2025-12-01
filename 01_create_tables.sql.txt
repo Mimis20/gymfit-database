@@ -1,0 +1,39 @@
+-- Criação das tabelas do banco GymFit
+
+CREATE TABLE Alunos (
+    id_aluno INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    data_nascimento DATE
+);
+
+CREATE TABLE Instrutores (
+    id_instrutor INT PRIMARY KEY,
+    nome VARCHAR(100),
+    especialidade VARCHAR(50)
+);
+
+CREATE TABLE Planos (
+    id_plano INT PRIMARY KEY,
+    nome VARCHAR(50),
+    valor DECIMAL(10,2),
+    duracao_meses INT
+);
+
+CREATE TABLE Aulas (
+    id_aula INT PRIMARY KEY,
+    id_instrutor INT,
+    data_hora DATETIME,
+    FOREIGN KEY (id_instrutor) REFERENCES Instrutores(id_instrutor)
+);
+
+CREATE TABLE Pagamentos (
+    id_pagamento INT PRIMARY KEY,
+    id_aluno INT,
+    id_plano INT,
+    data_pagamento DATE,
+    valor_pago DECIMAL(10,2),
+    FOREIGN KEY (id_aluno) REFERENCES Alunos(id_aluno),
+    FOREIGN KEY (id_plano) REFERENCES Planos(id_plano)
+);

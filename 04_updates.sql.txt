@@ -1,0 +1,11 @@
+-- Atualizando dados
+
+-- Alterar email do aluno Lucas Silva
+UPDATE Alunos
+SET email = 'lucas.silva@gmail.com'
+WHERE id_aluno = 1;
+
+-- Alterar valor do plano Mensal
+UPDATE Planos
+SET valor = 160.00
+WHERE id_plano = 1;

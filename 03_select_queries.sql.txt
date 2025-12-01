@@ -1,0 +1,14 @@
+-- Consultas de exemplo
+
+-- Todos os alunos
+SELECT * FROM Alunos;
+
+-- Todas as aulas de instrutor Carlos Mendes
+SELECT a.id_aula, a.data_hora
+FROM Aulas a
+JOIN Instrutores i ON a.id_instrutor = i.id_instrutor
+WHERE i.nome = 'Carlos Mendes';
+
+-- Pagamentos acima de R$200
+SELECT * FROM Pagamentos
+WHERE valor_pago > 200;
